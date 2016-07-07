@@ -2,8 +2,8 @@
 public class Verificari {
 	
 	public boolean dubluExemplar(Carte a, Carte b) {
-		if(a.getAutor().equals(b.getAutor()) && a.getTitlu().equals(b.getTitlu()) 
-			&& a.getEditura().equals(b.getEditura()) && a.getNumarPagini()==b.getNumarPagini())
+		if(a.getAutor()==b.getAutor() && a.getTitlu()==b.getTitlu() 
+			&& a.getEditura()==b.getEditura() && a.getNumarPagini()==b.getNumarPagini())
 				return true;
 		else 	return false;
 	}

@@ -17,7 +17,7 @@ public class Test {
 		Verificari verif = new Verificari();
 		
 		Carte c = new Carte();
-		c=verif.returneazaCarteGroasa(carte1, carte2);
+		c=verif.carteGroasa(carte1, carte2);
 		verif.afisareDetalii(c);
 		
 		if(verif.dubluExemplar(carte1, carte2)==true)
