@@ -1,0 +1,12 @@
+
+public class Operatii {
+	public void adunare(NumarComplex a, NumarComplex b) {
+		NumarComplex c = new NumarComplex(); 
+		a.getRe() + b.getRe();
+		a.getIm() + b.getIm();
+	}
+	
+	public void scadere(float a, float b) {
+		System.out.println(a.getRe()-b.getRe(),"+",a.getIm()-b.getIm(),"i");
+	}
+}

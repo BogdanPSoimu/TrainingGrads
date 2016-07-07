@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+	    String titlu1 = s.nextLine();
+	    String autor1 = s.nextLine();
+	    String editura1 = s.nextLine();
+	    int numarPagini1 = s.nextInt();
+	    
+		Carte carte1 = new Carte(titlu1, autor1, editura1, numarPagini1);
+		
+	    String titlu2 = s.nextLine();
+	    String autor2 = s.nextLine();
+	    String editura2 = s.nextLine();
+	    int numarPagini2 = s.nextInt();
+	    
+		Carte carte2 = new Carte(titlu2, autor2, editura2, numarPagini2);
+		
+		Verificari verif = new Verificari();
+		
+		
+	}
+	
+}

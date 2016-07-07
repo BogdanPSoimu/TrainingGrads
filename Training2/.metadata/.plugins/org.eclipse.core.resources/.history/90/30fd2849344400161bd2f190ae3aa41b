@@ -1,0 +1,15 @@
+
+public class Verificari {
+	
+	public boolean dubluExemplar(Carte a, Carte b) {
+		if(a==b)
+			return true;
+		else return false;
+	}
+	
+	public Carte carteGroasa(Carte a, Carte b) {
+		if(a.getNumarPagini()>b.getNumarPagini())
+			return a;
+		else return b;
+	}
+}

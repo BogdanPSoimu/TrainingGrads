@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		NumarComplex a = new NumarComplex(10,9);
+		NumarComplex b = new NumarComplex(5,4);
+		Operatii o=new Operatii();
+
+		o.adunare(a,b);
+		o.scadere(a,b);
+	}
+
+}

@@ -1,0 +1,19 @@
+
+public class Carte {
+	private String titlu;
+	private String autor;
+	private String editura;
+	private int numarPagini;
+	
+	public Carte(String titlu, String autor, String editura, int numarPagini) {
+		super();
+		this.titlu = titlu;
+		this.autor = autor;
+		this.editura = editura;
+		this.numarPagini = numarPagini;
+	}
+	
+	public Carte(){
+		
+	}
+}

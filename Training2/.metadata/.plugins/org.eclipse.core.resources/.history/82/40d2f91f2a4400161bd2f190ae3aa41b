@@ -1,0 +1,22 @@
+
+public class Operatii {
+	public void adunare(NumarComplex a, NumarComplex b) {
+		NumarComplex c = new NumarComplex(); 
+		c.setRe(a.getRe() + b.getRe());
+		c.setIm(a.getIm() + b.getIm());
+		System.out.println("Re adunare=");
+		System.out.printf("%.2f", c.re);
+		System.out.println("Im adunare=");
+		System.out.printf("%.2f", c.im);
+	}
+	
+	public void scadere(NumarComplex a, NumarComplex b) {
+		NumarComplex c = new NumarComplex(); 
+		c.setRe(a.getRe() - b.getRe());
+		c.setIm(a.getIm() - b.getIm());
+		System.out.println("Re scadere=");
+		System.out.printf("%.2f", c.re);
+		System.out.println("Im scadere=");
+		System.out.printf("%.2f", c.im);
+	}
+}
