@@ -1,4 +1,3 @@
 *.class
 *.iml
-/Training3/.idea
-/Training3/oop-fundamentals/.idea
+*/.idea
