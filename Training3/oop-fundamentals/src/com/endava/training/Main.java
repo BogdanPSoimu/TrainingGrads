@@ -24,5 +24,7 @@ public class Main {
         A a = new B(); a.f();
         B b = new C(); b.f(4);
         A a1 = new C(); a1.f(5,"abc");
+
+
     }
 }
