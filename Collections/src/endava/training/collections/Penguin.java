@@ -44,6 +44,7 @@ public class Penguin {
 				getMatingPartners().size() + ", Average age of Mating partners: " + mateAverageAge();
 	}
 
+	//generate a list of random mating partners (max 3)
 	public void generateMatingPartners () {
 		Random rand = new Random();
 		List<Penguin> partners = new ArrayList<Penguin>();
@@ -54,7 +55,8 @@ public class Penguin {
 
 		this.setMatingPartners(partners);
 	}
-	
+
+	//average age of the mating partners
 	public double mateAverageAge() {
 		double average = 0;
 		for(int i = 0; i < matingPartners.size(); i++)

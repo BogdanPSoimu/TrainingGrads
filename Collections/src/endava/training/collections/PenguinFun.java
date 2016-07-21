@@ -11,6 +11,7 @@ public class PenguinFun {
 		PenguinHatchery penguinHatchery = new PenguinHatchery();
 		Set<Penguin> penguinsSet = new HashSet<Penguin>();
 
+        //generate 10 penguins and their mating partners for the ArrayList, HashSet
 		for (int i = 0; i < 10 ; i++) {
 			Penguin hatchedPenguin = penguinHatchery.hatchPenguin();
 			penguins.add(hatchedPenguin);
@@ -49,6 +50,7 @@ public class PenguinFun {
         List<Penguin> penguinAfrican = new ArrayList<>();
         List<Penguin> penguinAntartic = new ArrayList<>();
 
+        //group up the penguins by their race
         for (Penguin penguin : penguins) {
             if(penguin.getRace().toString().equals("IMPERIAL"))
                 penguinImperial.add(penguin);

@@ -3,7 +3,7 @@ package endava.training.collections;
 import java.util.Comparator;
 
 public class SpecialComparator implements Comparator<Penguin> {
-
+    //race, age comparator
     @Override
     public int compare(Penguin p1, Penguin p2) {
         if(p1.getRace().compareTo(p2.getRace()) == 0)
