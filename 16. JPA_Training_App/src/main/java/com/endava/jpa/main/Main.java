@@ -19,17 +19,16 @@ public class Main {
 		/**
 		 * Comment unneeded method invocations.
 		 */
-		jpaMainService.findDepartment();
-		jpaMainService.findDepartmentByName();
+		Department department = jpaMainService.findDepartmentById(1);
+//		jpaMainService.findDepartmentByName();
 
-		Department department = new Department(7, "ITS");
-		Timestamp timestamp = new Timestamp(1994, 7, 15, 1, 1,1, 1);
-		Employee employee = new Employee(7, "Mircea", 99999, department, "frunzei", "bucharest", "romania", "800", timestamp);
+		Timestamp timestamp = new Timestamp(94, 7, 15, 1, 1,1, 1);
+		System.out.println(timestamp.toString());
 
 //		jpaMainService.insertDepartment("IT");
 //		jpaMainService.updateDepartment(1, "HR1");
 //		jpaMainService.deleteDepartment(1);
-		jpaMainService.insertEmployee(employee);
+//		jpaMainService.insertEmployee("Mircea", 99999, 2, "frunzei", "Bucharest", "Romania", "800111", timestamp);
 //		jpaMainService.getEmployeesFromBucharest();
 //		jpaMainService.giveSalaryRaise();
 //		jpaMainService.removeEmployee();

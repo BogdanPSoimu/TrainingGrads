@@ -8,7 +8,7 @@ public interface EmployeeService {
 
     public Employee find(int id);
 
-    public List<Employee> find(String departmentName);
+    public List<Employee> find(String city);
 
     public void save(Employee toBeSaved);
 

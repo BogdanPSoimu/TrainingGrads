@@ -26,9 +26,9 @@ public class JPAMainService {
 
 	//-------------------------------------- Department -----------------------------/
 
-	public void findDepartment() {
-		Department department = departmentService.find(3);
-		System.out.println(department);
+	public Department findDepartmentById(int id) {
+		Department department = departmentService.find(id);
+		return department;
 	}
 
 	public void findDepartmentByName() {
@@ -78,7 +78,18 @@ public class JPAMainService {
 	/**
 	 * Create a new employee entity and save it into the corresponding table
 	 */
-	public void insertEmployee(Employee employee) {
+	public void insertEmployee(String name, int salary, int deptId, String street, String city, String state, String zipCode, Timestamp birthday) {
+		Employee employee = new Employee();
+
+		employee.setName(name);
+		employee.setSalary(salary);
+		employee.setDepartment(departmentService.find(deptId));
+		employee.setStreet(street);
+		employee.setCity(city);
+		employee.setState(state);
+		employee.setZipCode(zipCode);
+		employee.setBirthday(birthday);
+
 		employeeService.save(employee);
 	}
 
@@ -98,7 +109,8 @@ public class JPAMainService {
 	 * Give a salary raise(+10%) for all employees that work in the 'Endava' project (project name = 'Endava').
 	 * ! Use a join query.
 	 */
-	public void giveSalaryRaise(){}
+	public void giveSalaryRaise(){
+	}
 
 
 	//-------------------------------------- Project -----------------------------/

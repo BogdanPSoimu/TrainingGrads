@@ -20,8 +20,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeDao.find(id);
     }
 
-    public List<Employee> find(String departmentName) {
-        return employeeDao.find(departmentName);
+    public List<Employee> find(String city) {
+        return employeeDao.find(city);
     }
 
     @Transactional

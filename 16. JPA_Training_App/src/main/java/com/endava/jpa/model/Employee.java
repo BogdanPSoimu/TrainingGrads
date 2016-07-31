@@ -15,7 +15,7 @@ public class Employee {
     private int salary;
 
     //ManyToOne relation with department
-    @ManyToOne(cascade=CascadeType.PERSIST)
+    @ManyToOne(cascade= CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "dept_id")
     private Department department;
 
@@ -101,20 +101,6 @@ public class Employee {
     public void setState(String state) {
         this.state = state;
     }
-
-    public Employee(int id, String name, int salary, Department department, String street, String city, String state, String zipCode, Timestamp birthday) {
-        this.id = id;
-        this.name = name;
-        this.salary = salary;
-        this.department = department;
-        this.street = street;
-        this.city = city;
-        this.state = state;
-        this.zipCode = zipCode;
-        this.birthday = birthday;
-    }
-
-    public Employee() {}
 
     @Override
     public String toString() {

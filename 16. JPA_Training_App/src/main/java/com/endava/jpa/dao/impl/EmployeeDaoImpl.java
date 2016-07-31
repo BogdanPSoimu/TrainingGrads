@@ -14,15 +14,15 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	private String QUERY_FIND_DEPARTMENT_BY_NAME = "Select e from Employee where e.name = :emp_name";
+	private String QUERY_FIND_EMPLOYEE_BY_CITY = "Select e from Employee e where e.city = :city";
 
 	public Employee find(int id) {
 		return entityManager.find(Employee.class, id);
 	}
 
-	public List<Employee> find(String departmentName) {
-		return entityManager.createQuery(QUERY_FIND_DEPARTMENT_BY_NAME)
-				.setParameter("emp_name", departmentName)
+	public List<Employee> find(String city) {
+		return entityManager.createQuery(QUERY_FIND_EMPLOYEE_BY_CITY)
+				.setParameter("city", city)
 				.getResultList();
 	}
 
@@ -36,9 +36,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	}
 
 	public void remove(Employee toBeRemoved) {
-		Employee department = entityManager.find(Employee.class, toBeRemoved.getId());
-		entityManager.merge(department);
-		entityManager.remove(department);
+		Employee employee = entityManager.find(Employee.class, toBeRemoved.getId());
+		entityManager.merge(employee);
+		entityManager.remove(employee);
 
 	}
 }
