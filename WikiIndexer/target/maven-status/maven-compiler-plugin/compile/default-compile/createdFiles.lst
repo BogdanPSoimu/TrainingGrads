@@ -1,0 +1,11 @@
+com\endava\project\controllers\TitleController.class
+com\endava\project\DemoApplication.class
+com\endava\project\entities\Occurrence.class
+com\endava\project\services\impl\OccurrenceServiceImpl$1.class
+com\endava\project\services\OccurrenceService.class
+com\endava\project\services\impl\OccurrenceServiceImpl.class
+com\endava\project\entities\Title.class
+com\endava\project\repositories\OccurrenceRepository.class
+com\endava\project\services\impl\TitleServiceImpl.class
+com\endava\project\services\TitleService.class
+com\endava\project\repositories\TitleRepository.class

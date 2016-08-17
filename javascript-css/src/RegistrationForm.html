@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    <script src="features.js"></script>
+</head>
+<body>
+<div>
+    <form="myForm" action="RegistrationForm.html" method="post">
+        <h1>Register</h1>
+        Nume:<br>
+        <input type="text" id="nume" name="nume"><div id="numeAlert"></div><br>
+        Prenume:<br>
+        <input type="text" id="prenume" name="prenume"><div id="prenumeAlert"></div><br>
+        Mail:<br>
+        <input type="text" id="mail" name="mail"><div id="mailAlert"></div><br>
+        Varsta:
+        <select>
+            <option value="<18"><18</option>
+            <option value="18-25">18-25</option>
+            <option value="25-40">25-40</option>
+            <option value="40-55">40-55</option>
+            <option value="55+">55+</option>
+        </select><br><br>
+        <button type="submit" id="submitButton" onclick="validateForm()">Submit</button>
+
+    </form>
+</div>
+</body>
+</html>

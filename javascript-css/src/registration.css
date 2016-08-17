@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+}
+
+div {
+    border-radius: 5px;
+    background-color: white;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#nume {
+    border-radius: 5px;
+    background-color: gray;
+}
+
+#nume:focus {
+    background-color: white;
+}
+
+#prenume {
+    border-radius: 5px;
+    background-color: gray;
+}
+
+#prenume:focus {
+    background-color: white;
+}
+
+#mail {
+    border-radius: 5px;
+    background-color: gray;
+}
+
+#mail:focus {
+    background-color: white;
+}
+
+#submitButton {
+    background-color: lightgray;
+    width: 80px;
+    height: 30px;
+}
+
+#submitButton:hover {
+    background-color: darkgray;
+}
+
+
